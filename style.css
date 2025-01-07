@@ -1,0 +1,63 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #87ceeb, #f0f8ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.game{
+    width: 600px;
+    height: 200px;
+    border: 1px solid #000000;
+    margin: auto;
+    margin-top:100px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#dino {
+    width: 70px;
+    height: 70px;
+    background-image: url(dinosaur.png);
+    background-size: auto 70px;
+    position: relative;
+    top: 143px;
+}
+
+.jump{
+    animation: jump 0.3s linear;
+}
+@keyframes jump{
+    0% {top:143 px;}
+    30% {top: 115px;}
+    50% {top: 70px;}
+    80% {top: 115px;}
+    100% {top: 143px;}
+}
+
+#cactus {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 91px;
+    left: 560px; 
+    background-image: url(cactus.png);
+    background-size: 40px 40px; 
+    animation: cactus-block 1.2s infinite linear;
+}
+
+@keyframes cactus-block {
+    0% {
+        left: 600px;
+    }
+    100% {
+        left: -20px;
+    }
+}
